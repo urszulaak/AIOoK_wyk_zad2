@@ -22,8 +22,10 @@
         <h2>Edit:</h2>
         <div>
             <label>interest:
-                <input [(ngModel)]="interests[selected]" />
-                <button (click)="selected=-1">Save</button>
+
+                <input [(ngModel)]="interests[selected]"/>
+                <button (click)="save()">Save</button>
+                <button (click)="cancel()">Cancel</button>
             </label>
         </div>
 }
