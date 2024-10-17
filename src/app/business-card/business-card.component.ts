@@ -31,17 +31,9 @@ export class BusinessCardComponent {
       this.originalInterest = this.interests[which]; 
   }
 
-  save(): void {
-    this.selected = -1;
-    this.originalInterest = '';
-  }
-
   cancel(): void {
-    if (this.originalInterest !== '') {
-      this.interests[this.selected] = this.originalInterest;
-    }
+    this.interests[this.selected] = this.originalInterest;
     this.selected = -1;
-    this.originalInterest = '';
   }
 
 }
